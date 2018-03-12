@@ -32,9 +32,12 @@ These libraries will allow for the data import of Excel files, exploratory and t
 twloa_full <- read.xlsx("D:/Users/Christianna Brown/Desktop/MSDS 692/Data Files/TWLOA All - Masked.xlsx", 1, header = T) #This imports the data into R
 twloa_full <- twloa_full[, -c(12:25)] #This removes unnecessary, hidden rows
 attach(twloa_full) #This allows the user to call specific rows easily
-
+```
+```{r head, echo=FALSE, message=FALSE, warning=FALSE}
 #Data overview
 head(twloa_full)
+```
+```{r str, echo=FALSE, message=FALSE, warning=FALSE}
 str(twloa_full)
 ```
 From this we can see that this dataset contains 905 observations across 15 variables. These variables include:
